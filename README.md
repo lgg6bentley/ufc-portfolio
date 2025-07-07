@@ -2,7 +2,7 @@
 
 Welcome to my personal developer portfolio — inspired by the energy, discipline, and design of the UFC. This site showcases my full-stack projects, skills, and journey from zero to code warrior.
 
-![Screenshot of UFC Portfolio](./assets/ufc-portfolio-screenshot.png)
+![Screenshot](./assets/ufc-portfolio-screenshot.png)
 
 ## 🔗 Live Site
 
@@ -27,7 +27,7 @@ Welcome to my personal developer portfolio — inspired by the energy, disciplin
 
 | Home Page | 404 Page |
 |-----------|----------|
-| ![Home](./assets/home-screenshot.png) | ![404](./assets/404_knockedoutofthecage.png) |
+| ![Screenshot](./assets/ufc-portfolio-screenshot.png) | ![404 Page](./assets/404_knockedoutofthecage.png)|
 
 ## 📬 Contact
 
