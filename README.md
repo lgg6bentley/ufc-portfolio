@@ -2,8 +2,6 @@
 
 Welcome to my personal developer portfolio — inspired by the energy, discipline, and design of the UFC. This site showcases my full-stack projects, skills, and journey from zero to code warrior.
 
-![Screenshot](./assets/ufc-portfolio-screenshot.png)
-
 ## 🔗 Live Site
 
 👉 [Visit the Portfolio](https://lgg6bentley.github.io/ufc-portfolio/)
@@ -27,7 +25,7 @@ Welcome to my personal developer portfolio — inspired by the energy, disciplin
 
 | Home Page | 404 Page |
 |-----------|----------|
-| ![Screenshot](./assets/ufc-portfolio-screenshot.png) | ![404 Page](./assets/404_knockedoutofthecage.png)|
+| ![Home](./assets/ufc-portfolio-screenshot.png) | ![404 Page](./assets/404_knockedoutofthecage.png)|
 
 ## 📬 Contact
 
