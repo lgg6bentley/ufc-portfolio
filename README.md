@@ -1,5 +1,9 @@
 # 🥋 UFC Portfolio – Bentley
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+
 Welcome to my personal developer portfolio — inspired by the energy, discipline, and design of the UFC. This site showcases my full-stack projects, skills, and journey from zero to code warrior.
 
 ## 🔗 Live Site
@@ -25,7 +29,7 @@ Welcome to my personal developer portfolio — inspired by the energy, disciplin
 
 | Home Page | 404 Page |
 |-----------|----------|
-| ![Home](./assets/ufc-portfolio-screenshot.png) | ![404 Page](./assets/404_knockedoutofthecage.png)|
+| ![Home](./assets/home-screenshot.png) | ![404 Page](./assets/404_knockedoutofthecage.png)|
 
 ## 📬 Contact
 
