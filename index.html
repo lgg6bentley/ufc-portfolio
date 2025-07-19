@@ -128,7 +128,7 @@
   </style>
 </head>
 <body>
- 
+  
 <a href="dojo.html" class="btn">Enter The Dojo</a>
   <header class="main-header">
     <div class="container header-content" style="text-align: center;">
@@ -163,7 +163,7 @@
         <li><i class="fas fa-dumbbell"></i> <strong>Weight Class:</strong> Full-Stack</li>
         <li><i class="fas fa-arrows-alt-h"></i> <strong>Reach:</strong> Frontend to Backend</li>
         <li><i class="fas fa-trophy"></i> <strong>Wins:</strong> 12 Projects Deployed</li>
-        <li><i class="fas fa-bolt"></i> <strong>Special Moves:</strong> Django, React, Docker</li>
+        <li><i class="fas fa-bolt"></i> <strong>Special Moves:</b> Django, React, Docker</li>
       </ul>
     </section>
 <section id="skills" class="skills-section" style="padding: 2rem 1rem;">
@@ -184,7 +184,7 @@
 
 
     <section id="skills" class="skills-section" style="padding: 2rem 1rem;">
-    
+      
       <ul class="project-tech-list" style="justify-content: center;">
         <li>Python</li>
         <li>Django</li>
@@ -227,23 +227,43 @@
           </div>
         </div>
         <div class="project-card">
-  <h3>MLB Betsbuilder – Custom Wager Engine</h3>
-  <p>A full-stack sports betting platform for Major League Baseball fans. Users can generate AI-calculated parlays, evaluate odds in real time, and securely upgrade to a premium membership using Stripe. The platform includes a full-featured admin dashboard and Stripe CLI integration for seamless local testing and subscription management.</p>
-  <ul class="project-tech-list">
-    <li>Django</li><li>DRF</li><li>Stripe API</li><li>Stripe CLI</li><li>React</li><li>Vite</li>
-  </ul>
-  <div style="display: flex; align-items: center; gap: 0.5rem; justify-content: center; margin-top: 1rem;">
-    <a href="https://github.com/lgg6bentley/mlb-betsbuilder" target="_blank" class="btn-sm">GitHub Repo</a>
-    <img src="https://images.unsplash.com/photo-1578932107367-61d3b251937f?auto=format&fit=crop&w=256&h=256&q=80" 
-     alt="Baseball Stadium" 
-     style="height: 42px; width: 42px; border-radius: 50%; object-fit: cover;" />
+          <h3>MLB Betsbuilder – Custom Wager Engine</h3>
+          <p>A full-stack sports betting platform for Major League Baseball fans. Users can generate AI-calculated parlays, evaluate odds in real time, and securely upgrade to a premium membership using Stripe. The platform includes a full-featured admin dashboard and Stripe CLI integration for seamless local testing and subscription management.</p>
+          <ul class="project-tech-list">
+            <li>Django</li><li>DRF</li><li>Stripe API</li><li>Stripe CLI</li><li>React</li><li>Vite</li>
+          </ul>
+          <div style="display: flex; align-items: center; gap: 0.5rem; justify-content: center; margin-top: 1rem;">
+            <a href="https://github.com/lgg6bentley/mlb-betsbuilder" target="_blank" class="btn-sm">GitHub Repo</a>
+            <img src="https://images.unsplash.com/photo-1578932107367-61d3b251937f?auto=format&fit=crop&w=256&h=256&q=80" 
+              alt="Baseball Stadium" 
+              style="height: 42px; width: 42px; border-radius: 50%; object-fit: cover;" />
 
-<img src="https://logos-world.net/wp-content/uploads/2021/09/Major-League-Baseball-MLB-Logo.jpg" 
-     alt="MLB Logo" 
-     style="height: 42px; width: 42px; border-radius: 50%; object-fit: cover;" />
-   </div>
-</div>
-          <script>
+            <img src="https://logos-world.net/wp-content/uploads/2021/09/Major-League-Baseball-MLB-Logo.jpg" 
+              alt="MLB Logo" 
+              style="height: 42px; width: 42px; border-radius: 50%; object-fit: cover;" />
+          </div>
+        </div>
+
+        <!-- NEW PROJECT CARD: Job Tracker -->
+        <div class="project-card">
+          <h3>Job Tracker</h3>
+          <p>A full-stack web application to track job applications, featuring user authentication, CRUD operations for job entries, real-time data updates, and theme toggling. Built with React, Material-UI, and Firebase.</p>
+          <ul class="project-tech-list">
+            <li>React</li><li>Material-UI</li><li>Firebase</li><li>Firestore</li><li>Authentication</li><li>Vite</li>
+          </ul>
+          <div style="display: flex; align-items: center; gap: 0.5rem; justify-content: center; margin-top: 1rem;">
+            <a href="https://github.com/lgg6bentley/job-tracker-react-firebase" target="_blank" class="btn-sm">GitHub Repo</a>
+            <a href="https://job-tracker-app-umber.vercel.app/" target="_blank" class="btn-sm">Live Demo</a>
+            <img src="https://placehold.co/42x42/000000/FFFFFF?text=React" alt="React Icon" style="height: 42px; width: 42px; border-radius: 50%; object-fit: cover;" />
+            <img src="https://placehold.co/42x42/FFCA28/000000?text=Fire" alt="Firebase Icon" style="height: 42px; width: 42px; border-radius: 50%; object-fit: cover;" />
+          </div>
+        </div>
+        <!-- END NEW PROJECT CARD -->
+
+      </div>
+    </section>
+
+    <script>
   const konamiCode = [
     "ArrowUp", "ArrowUp",
     "ArrowDown", "ArrowDown",
@@ -267,7 +287,9 @@
   document.body.classList.add("fighter-mode");
 
   // 🎧 Play theme song
-  const theme = new Audio("your-theme-song.mp3");
+  // IMPORTANT: You need to provide a valid path to your MP3 file here.
+  // For example: const theme = new Audio("audio/your-theme-song.mp3");
+  const theme = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"); // Placeholder audio
   theme.volume = 0.8; // Optional: adjust volume
   theme.play().catch((err) => {
     console.warn("Autoplay blocked. User interaction may be required.", err);
@@ -295,13 +317,14 @@
   // ⏱️ Reset after 10 seconds
   setTimeout(() => {
     document.body.classList.remove("fighter-mode");
+    banner.remove(); // Remove the banner after it fades out
+    theme.pause(); // Stop the music
+    theme.currentTime = 0; // Reset music to start
   }, 10000);
 }
 
   // Optional: Add a class that triggers CSS changes
-  setTimeout(() => {
-    document.body.classList.remove("fighter-mode");
-  }, 10000); // Reset after 10 seconds
+  // This part of the script was a bit redundant, removed the duplicate setTimeout.
 </script>
 
 <section id="contact" class="project-card" style="max-width: 900px; margin: 3rem auto; padding: 2rem; background: #1a1a1a; border-radius: 8px;">
@@ -319,3 +342,5 @@
     </div>
   </form>
 </section>
+</body>
+</html>
